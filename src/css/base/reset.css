@@ -2,6 +2,8 @@
   padding: 0px;
   margin: 0px;
   border: none;
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
 }
 
 *,
@@ -11,10 +13,16 @@
 }
 
 /* Links */
+Link {
+  text-decoration: none;
+}
 
 a,
 a:link,
 a:visited {
+  text-decoration: none;
+}
+h3 {
   text-decoration: none;
 }
 
@@ -48,7 +56,20 @@ ul,
 ul li {
   list-style: none;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+}
+html::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 img {
   vertical-align: top;
 }
@@ -92,6 +113,9 @@ input:focus,
 input:active,
 button:focus,
 button:active {
+  outline: none;
+}
+textarea:active {
   outline: none;
 }
 

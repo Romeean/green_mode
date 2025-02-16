@@ -1,0 +1,88 @@
+#root {
+  
+  /* the main title */
+  --main-title-font: "Raleway";
+  --main-title-size: 82px;
+  --main-title-weight: 500;
+
+  /* title for topics*/
+  --title-font: "Raleway";
+  --title-size: 36px;
+  --title-weight: 400;
+  --title-line-height: 1.5;
+  --title-color: #fff;
+
+  /* navigation */
+  --nav-font: "Raleway";
+  --nav-size: 18px;
+  --nav-weight: 400;
+
+  /* regular text */
+  --text-font: "Raleway";
+  --text-size: 16px;
+  --text-line-height: 1.5;
+
+  /* undertitle text */
+  --under-title-font: "Raleway";
+  --under-title-size: 20px;
+  --under-title-weight: 500;
+  --under-title-color: white;
+
+  /* colors */
+  --black: #151414;
+  --accent: #45FB78;
+  --white: #fff;
+  --footer: #34C55C;
+  
+
+}
+h1{
+  font-family: var(--main-title-font);
+  font-size: var(--main-title-size);
+  font-weight: var(--main-title-weight);
+}
+h2{
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  line-height: var(--title-line-height);
+  color: var(--title-color);
+}
+h3 {
+  font-family: var(--nav-font);
+  font-size: var(--nav-size);
+  font-weight: var(--nav-weight);
+  color: white;
+  text-decoration: none;
+}
+h4 {
+  font-family: var(--under-title-font);
+  font-size: var(--under-title-size);
+  font-weight: var(--under-title-weight);
+  color: var(--under-title-color);
+}
+
+p {
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+  color: #fff;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.link{
+  transition: all 0.3s ease-in-out;
+
+}
+.link:hover{
+  color: var(--accent);
+} 
+.container{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+}

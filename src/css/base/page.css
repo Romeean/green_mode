@@ -1,0 +1,20 @@
+.contact_us_page{
+  background: var(#151414);
+}
+.contact_section{
+  margin: 0 auto;
+  width: 100vw;
+  height: 1920px;
+}
+.image_container_darker_contact_us_page {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(21, 20, 20, 0.7), #000000);
+  opacity: 0.9;
+  align-items: center;
+  overflow: hidden;
+}

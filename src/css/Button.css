@@ -1,0 +1,54 @@
+.button_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 500px;
+}
+.button {
+  color: black;
+  background: white;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid black;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-sent {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-sent:hover {
+  background: black;
+  color: white;
+}
+
+/* Анимация вспышки */
+.btn-sent::before {
+  content: "";
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease-in-out;
+}
+
+.btn-sent:hover::before {
+  left: 100%;
+}
+
+.btn-sent:active {
+  box-shadow: inset 4px 4px 6px rgba(255, 255, 255, 0.2),
+    inset -4px -4px 6px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1200px) {
+  .button_div {
+    width: 400px;
+  }
+}

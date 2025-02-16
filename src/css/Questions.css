@@ -1,0 +1,8 @@
+.contact_us_page{
+  width: 100%;
+  height: 100%;
+}
+.section_of_question{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

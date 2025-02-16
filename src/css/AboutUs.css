@@ -1,0 +1,24 @@
+.about_us_part{
+  background-color: #151414;
+}
+.input_line{
+  width: 95%;
+  padding-top: 30px;
+  border-bottom: 2px solid #000; 
+
+}
+.text_area_line{
+  width: 95%;
+  margin-top: 30px;
+  border-bottom: 2px solid #000; 
+}
+.about_us_flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_us_block{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}

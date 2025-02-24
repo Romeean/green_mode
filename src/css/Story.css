@@ -1,0 +1,10 @@
+.block_story {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.block_story_cell {
+  background-color: white;
+  width: 340px;
+  height: 270px;
+}

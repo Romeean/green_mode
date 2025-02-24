@@ -1,5 +1,5 @@
-import react from "react";
 import { useRef } from "react";
+import "../css/base/animation.css";
 
 import { ContactUs } from "../components/ContactUs";
 import { AboutUs } from "../components/AboutUs";
@@ -12,6 +12,7 @@ import backgroundPhoto from "../images/main_photo.png";
 
 export function HomePage() {
   const benefitsRef = useRef(null);
+
   return (
     <>
       <div className="home_page">
@@ -19,6 +20,7 @@ export function HomePage() {
           <Header />
           <div className="image_container_darker" />
           <img src={backgroundPhoto} className="image_container"></img>
+          {/* <div className="animation_circle"></div> */}
         </div>
         <div className="container">
           <HeaderTitle benefitsRef={benefitsRef} />

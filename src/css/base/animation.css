@@ -1,0 +1,20 @@
+@keyframes animation_for_web {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.6);
+  }
+}
+.animation_circle{
+  position: fixed;
+  background-color: #45FB78;
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  right: -100px;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: animation_for_web 0.5s linear infinite ; 
+}
+

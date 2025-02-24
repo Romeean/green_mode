@@ -50,7 +50,10 @@ export function ContactUs({ paddingUp, paddingDown }) {
   return (
     <div
       className="container"
-      style={{ paddingTop: paddingUp, paddingBottom: paddingDown }}
+      style={{
+        paddingTop: paddingUp,
+        paddingBottom: paddingDown,
+      }}
     >
       <div className="contact_us_block">
         <div className="background_text">

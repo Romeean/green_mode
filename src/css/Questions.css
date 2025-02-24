@@ -5,4 +5,24 @@
 .section_of_question{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.section_questions_answer{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr; /* Две части: одна для изображения, другая для текста */
+  gap: 10px;
+}
+@media(max-width: 1200px){
+  .section_of_question{
+    grid-template-columns: repeat(2, 0.4fr);
+    justify-content: center;
+  }
+}
+@media(max-width: 800px){
+  .section_of_question{
+    grid-template-columns: repeat(1, 0.5fr);
+    justify-content: center;
+    gap: 80px;
+  }
 }
